@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru,en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html">Gotika</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mainSite" class="main-site"></div>
+
+    <footer>
+        <div class="footer-top">
+            <p class="footer-slogan">ЦЕНА. КАЧЕСТВО. СТИЛЬ.</p>
+        </div>
+        <div class="footer-contact">
+            <p>Email:Gotika@gmail.com</p>
+            <p>Время работы службы поддержки:</p>
+            <p>ПН-ПТ: 9:00 – 21:00</p>
+            <div class="payment-methods">
+                <img src="img/visa.png" alt="Visa" />
+                <img src="img/mastercard.png" alt="MasterCard" />
+                <img src="img/paypal.png" alt="PayPal" />
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025, Gotika. Все права защищены.</p>
+            <a href="#" class="footer-offer">Публичная оферта</a>
+            <p>Доставка осуществляется службами доставки: Казпочта и др.</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('mainSite').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

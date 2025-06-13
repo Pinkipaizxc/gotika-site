@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата - Gotika</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .payment-container {
+            text-align: center;
+            padding: 40px;
+            background: #1a1a1a;
+            color: white;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 50px auto;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+        }
+        .card-display {
+            background: #2b2b2b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .card-number {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .contact-links {
+            margin-top: 20px;
+        }
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: 10px;
+        }
+        .contact-links a img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html">Gotika</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="payment-container">
+        <h2>Оплата заказа</h2>
+        <div class="card-display">
+            <p class="card-number">4450 5678 9012 3456</p>
+        </div>
+        
+        <div class="contact-links">
+            <p>Свяжитесь с нами для получения чека и трек-номера:</p>
+            <a href="https://wa.me/ваш_номер"><img src="img/whatsapp-logo.png" alt="WhatsApp"> WhatsApp</a>
+            <a href="https://t.me/ваш_телеграм"><img src="img/telegram-logo.png" alt="Telegram"> Telegram</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-top">
+          <p class="footer-slogan">ЦЕНА. КАЧЕСТВО. СТИЛЬ.</p>
+        </div>
+      
+        <div class="footer-contact">
+            <p>Email: Gotika@gmail.com</p>
+            <p>Время работы службы поддержки:</p>
+            <p>ПН-ПТ: 9:00 – 21:00</p>
+            <div class="payment-methods">
+              <img src="img/visa.png" alt="Visa" />
+              <img src="img/mastercard.png" alt="MasterCard" />
+              <img src="img/paypal.png" alt="PayPal" />
+            </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025, Gotika. Все права защищены.</p>
+          <a href="#" class="footer-offer">Публичная оферта</a>
+          <p>Доставка осуществляется службами доставки: Казпочта и др.</p>
+        </div>
+    </footer>
+</body>
+</html>

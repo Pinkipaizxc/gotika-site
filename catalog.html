@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Каталог - Gotika</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #000;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .catalog-title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 40px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .product-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .product-card:hover {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            width: 170px;
+            margin-bottom: 15px;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product-name {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .product-card a:visited {
+            color: #000; 
+            text-decoration: none; 
+        }
+        .product-card a {
+            color: #000; 
+            text-decoration: none; 
+        }
+        .add-to-cart-btn {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart-btn:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html">Gotika</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="catalog-title">Каталог</h2>
+    <section class="catalog-grid">
+        <div class="product-card">
+            <img src="img/mastermindjapan.png" alt="Спортивка">
+            <div class="product-price">11000 KZT</div>
+            <div class="product-name">Худи Mastermind Japan x Travis Scott</div>
+            <a href="masterjap.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/margiela.png" alt="Свитер">
+            <div class="product-price">9000 KZT</div>
+            <div class="product-name">Свитер Maison Margiela</div>
+            <a href="maisonmargiela.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/mastermind.png" alt="Зип-худи">
+            <div class="product-price">30000 KZT</div>
+            <div class="product-name">Зип-худи Mastermind</div>
+            <a href="mastermindworld.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/erd-jacket.png" alt="Кожаная куртка">
+            <div class="product-price">26000 KZT</div>
+            <div class="product-name">Кожаная куртка ERD</div>
+            <a href="erd.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/adidas.png" alt="Спортивка">
+            <div class="product-price">35000 KZT</div>
+            <div class="product-name">Спортивка Balenciaga x Adidas</div>
+            <a href="adidas-balennciaga.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/Y3.png" alt="Спортивный костюм">
+            <div class="product-price">28000 KZT</div>
+            <div class="product-name">Спортивный костюм Yohji Yamamoto</div>
+            <a href="yohji-sport.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/YY.png" alt="Пальто">
+            <div class="product-price">45000 KZT</div>
+            <div class="product-name">Пальто Yohji Yamamoto</div>
+            <a href="yohji-palto.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/YYshtani.png" alt="Брюки">
+            <div class="product-price">22000 KZT</div>
+            <div class="product-name">Брюки Yohji Yamamoto</div>
+            <a href="yohjishtani.html" class="buy-button">Купить</a>
+        </div>
+        <div class="product-card">
+            <img src="img/vtmsbomb.png" alt="Бомбер">
+            <div class="product-price">32000 KZT</div>
+            <div class="product-name">Бомбер Vetements</div>
+            <a href="bomber-vetements.html" class="buy-button">Купить</a>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <p class="footer-slogan">ЦЕНА. КАЧЕСТВО. СТИЛЬ.</p>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>О нас</h3>
+          <p>Gotika - ваш надежный партнер в мире моды и стиля.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Контакты</h3>
+          <p>Email: Gotika@gmail.com</p>
+          <p>Телефон: +7 (777) 777-77-77</p>
+        </div>
+        <div class="footer-section">
+          <h3>Мы в соцсетях</h3>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Gotika. Все права защищены.</p>
+        <a href="#" class="footer-offer">Публичная оферта</a>
+        <p>Доставка осуществляется службами доставки: Казпочта и др.</p>
+      </div>
+    </footer>
+</body>
+</html>

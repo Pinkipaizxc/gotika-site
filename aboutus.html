@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>О нас – Gotika</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Основной контейнер */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Герой-секция (Hero) */
+    .hero {
+      background: url("img/hero-image.jpg") center/cover no-repeat; /* Заменить на реальный путь к картинке */
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Раздел «О нас» */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .about-text {
+      flex: 1 1 400px;
+    }
+    .about-text h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Дополнительный блок с фото/картинкой, если нужно */
+    .about-image {
+      flex: 1 1 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Нижний отступ для завершения страницы */
+    .footer-space {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html">Gotika</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="aboutus.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+  <!-- Основной контейнер -->
+  <div class="container">
+    <!-- Герой-секция -->
+    <div class="hero">
+      <h2>О нас</h2>
+      <p>
+        Добро пожаловать в мир Gotika – место, где мода и качество становятся доступными каждому.
+      </p>
+    </div>
+
+    <!-- Раздел «О нас» -->
+    <div class="about-section">
+      <!-- Текстовая часть -->
+      <div class="about-text">
+        <h3>Наша история</h3>
+        <p>
+          Gotika – это не просто бренд одежды, а целая философия, которая объединяет доступность и стиль.
+          Мы верим, что каждый человек заслуживает носить качественные, брендовые вещи, не переплачивая при этом огромные суммы. 
+          Наша команда поставляет вещи, в которых сочетаются комфорт, современный дизайн и прочные материалы.
+        </p>
+
+        <h3>Наше видение</h3>
+        <p>
+          Мы стремимся к тому, чтобы стильная одежда была не роскошью, а привычным выбором на каждый день.
+          Наша цель – показать, что доступная мода может выглядеть так же эффектно, как и дорогие дизайнерские вещи.
+        </p>
+
+        <h3>Наша миссия</h3>
+        <p>
+          С Gotika вы получаете возможность свободно экспериментировать со стилем, не волнуясь о цене.
+          Мы хотим, чтобы каждый мог выразить себя с помощью модной одежды и при этом оставаться в бюджете.
+          Именно поэтому мы продолжаем развиваться, а также поддерживать тесный контакт с нашими клиентами.
+        </p>
+      </div>
+
+      <!-- Блок с фото (по желанию) -->
+      <div class="about-image">
+        <img src="img/logoabout.png" alt="О нас" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Небольшой отступ внизу, если нет футера -->
+  <div class="footer-space"></div>
+
+  <footer>
+    <div class="footer-top">
+      <p class="footer-slogan">ЦЕНА. КАЧЕСТВО. СТИЛЬ.</p>
+    </div>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>О нас</h3>
+        <p>Gotika - ваш надежный партнер в мире моды и стиля.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <p>Email: Gotika@gmail.com</p>
+        <p>Телефон: +7 (777) 777-77-77</p>
+      </div>
+      <div class="footer-section">
+        <h3>Мы в соцсетях</h3>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Gotika. Все права защищены.</p>
+      <a href="#" class="footer-offer">Публичная оферта</a>
+      <p>Доставка осуществляется службами доставки: Казпочта и др.</p>
+    </div>
+  </footer>
+</body>
+</html>
